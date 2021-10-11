@@ -8,8 +8,8 @@ package sign;
 public class SignedUnsignedInts {
 
     public static void main(String[] args) {
-        assignSignedInts();
-        assignUnsignedInts();
+       assignSignedInts();
+       // assignUnsignedInts();
     }
 
     /**
@@ -27,6 +27,7 @@ public class SignedUnsignedInts {
 
         System.out.println("Character # of bits: " + Character.SIZE);
         System.out.println((int)Character.MIN_VALUE);
+        System.out.println((int)Character.MAX_VALUE);
     }
 
     /**
@@ -44,11 +45,12 @@ public class SignedUnsignedInts {
         // negative int - java automatically assumes the value being assigned is a 32 bit integer
         // For negative numbers that are less than 32 bits, you have to add the cast otherwise java reports
         // a potential loss of information since a 32 bit int would result in a positive value; not a negative value
+        /// 0000_0000_
         byte minByte = (byte) 0b1000_0000;
         System.out.println("Decimal Value: " + minByte);
         // note the sign extension if we look at the 32 bit binary string
         System.out.println("Binary Value: " + Integer.toBinaryString(minByte));
-
+        // 0000_0000_
         int int128 = 0b1000_0000;
         System.out.println("Decimal Value: " + int128);
         System.out.println("Binary Value: " + Integer.toBinaryString(int128));
