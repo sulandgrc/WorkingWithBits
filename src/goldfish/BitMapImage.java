@@ -26,7 +26,7 @@ public class BitMapImage {
 
     // The pic array represents 6 rows of 8 colored squares
     private static short[] pic = {
-            (short) 0b1010101010101010,
+            (short) 0xAAAA,
             (short) 0b1010010110010110,
             (short) 0b1001110001011010,
             (short) 0b1001000001011010,

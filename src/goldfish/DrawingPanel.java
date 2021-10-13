@@ -436,6 +436,7 @@ public class DrawingPanel implements ImageObserver {
      * @return alpha component from 0-255
      */
     public static int getAlpha(int rgb) {
+
         return (rgb & 0xff000000) >> 24;
     }
 
@@ -447,6 +448,7 @@ public class DrawingPanel implements ImageObserver {
      * @return blue component from 0-255
      */
     public static int getBlue(int rgb) {
+        //0000_0000_
         return (rgb & 0x000000ff);
     }
 
